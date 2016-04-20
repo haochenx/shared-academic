@@ -1,0 +1,181 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4768,        173]
+NotebookOptionsPosition[      4054,        147]
+NotebookOutlinePosition[      4393,        162]
+CellTagsIndexPosition[      4350,        159]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Mathematica Ex Lv.0 to Lv.2 (v.1 2016/04/20 haochenx)
+Questions and example solution
+Authored by Haochen Xie\
+\>", "Text",
+ CellChangeTimes->{{3.670108321007976*^9, 3.670108374304184*^9}, {
+  3.670109135459751*^9, 3.670109165717458*^9}}],
+
+Cell["Level 0", "Text",
+ CellChangeTimes->{{3.670108383204171*^9, 3.670108390787496*^9}}],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "1"}]], "Input",
+ CellChangeTimes->{{3.670108393142897*^9, 3.670108397826052*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SqrtBox["6"], "-", 
+   RowBox[{"3", "/", "4"}]}], 
+  RadicalBox["100", "3"]]], "Input",
+ CellChangeTimes->{{3.670108402466163*^9, 3.670108473701732*^9}}],
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox["3", "4"]}], "+", 
+    SqrtBox["6"]}], 
+   SuperscriptBox["10", 
+    RowBox[{"2", "/", "3"}]]], "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"Sin", "[", 
+  RowBox[{
+   FractionBox["17", "6"], "\[Pi]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.670108490683972*^9, 3.670108510112073*^9}}],
+
+Cell["Level 1", "Text",
+ CellChangeTimes->{{3.670108521392873*^9, 3.670108523390279*^9}}],
+
+Cell[BoxData[
+ RowBox[{"D", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["t", "3"], "+", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"Sin", "[", "t", "]"}], "+", 
+      RowBox[{"Cos", "[", 
+       SuperscriptBox["t", "2"], "]"}]}], 
+     SqrtBox[
+      RowBox[{
+       SuperscriptBox["t", "2"], "+", "7"}]]]}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.670108528955492*^9, 3.670108650718085*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[Integral]", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"6", "x"}], 
+    SqrtBox[
+     RowBox[{
+      SuperscriptBox["x", "2"], "+", "6"}]]], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Input",
+ CellChangeTimes->{{3.670108663321279*^9, 3.67010868219741*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SubsuperscriptBox["\[Integral]", "6", "10"], 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"Sin", "[", "x", "]"}], "2"], "+", 
+     FractionBox["1", 
+      SuperscriptBox["x", "2"]]}], ")"}], 
+   RowBox[{"\[DifferentialD]", "x"}]}]}]], "Input",
+ CellChangeTimes->{{3.670108687455436*^9, 3.670108752647876*^9}}],
+
+Cell["Level 2", "Text",
+ CellChangeTimes->{{3.670108763308486*^9, 3.670108780876872*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     RowBox[{"6", "x"}], "-", "7"}], "\[Equal]", "0"}], ",", "x"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.670108784325308*^9, 3.670108797562989*^9}}],
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"D", "[", 
+     RowBox[{
+      RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}], "\[Equal]", 
+    RowBox[{
+     RowBox[{"2", 
+      RowBox[{"x", "[", "t", "]"}]}], "+", 
+     RowBox[{"Sin", "[", "t", "]"}]}]}], ",", "x", ",", "t"}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.670108802517755*^9, 3.67010888017058*^9}}],
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"x", "[", "t", "]"}], ",", "t"}], "]"}], "\[Equal]", 
+      RowBox[{
+       RowBox[{"2", 
+        RowBox[{"x", "[", "t", "]"}]}], "+", 
+       RowBox[{"Sin", "[", "t", "]"}]}]}], ",", 
+     RowBox[{
+      RowBox[{"x", "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}], ",", "x", ",",
+    "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.670108967081653*^9, 3.670108979670942*^9}}]
+},
+WindowSize->{812, 942},
+WindowMargins->{{112, Automatic}, {Automatic, 12}},
+FrontEndVersion->"10.4 for Linux x86 (32-bit) (February 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 247, 6, 77, "Text"],
+Cell[808, 28, 89, 1, 33, "Text"],
+Cell[900, 31, 115, 2, 32, "Input"],
+Cell[1018, 35, 195, 6, 74, "Input"],
+Cell[1216, 43, 229, 9, 74, "Input"],
+Cell[1448, 54, 167, 4, 56, "Input"],
+Cell[1618, 60, 89, 1, 33, "Text"],
+Cell[1710, 63, 410, 13, 77, "Input"],
+Cell[2123, 78, 281, 9, 75, "Input"],
+Cell[2407, 89, 367, 11, 58, "Input"],
+Cell[2777, 102, 89, 1, 33, "Text"],
+Cell[2869, 105, 264, 8, 37, "Input"],
+Cell[3136, 115, 389, 12, 32, "Input"],
+Cell[3528, 129, 522, 16, 32, "Input"]
+}
+]
+*)
+
